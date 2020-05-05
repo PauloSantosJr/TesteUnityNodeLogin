@@ -11,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+app.get('/', function(req, res) {
+    res.send('Welcome')
+});
 
 // POST
 app.post('/log', function(req, res) {
